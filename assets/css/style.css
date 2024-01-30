@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #CC0000;
+    --cor-tercearia: #515151;
+    --cor-quartenaria: #CCCCCC;
+    --cor-quintenaria: #F6F6F6;
+    --expessura-fonte-titulos: 600;
+    --expessura-fonte-normal: 400;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.menuBarra {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+.container-01 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.infoYoutube {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.barra {
+    background: var(--cor-primaria);
+    width: 18px;
+    height: 2px;
+}
+
+.logoDoYoutube {
+    width: 5.625rem;
+    height: 1.25rem;
+}
+
+.barraDePesquisa {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.inputDePesquisa {
+    width: 21.75rem;
+    height: 2.5rem;
+    border: .1rem solid var(--cor-quartenaria);
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-normal);
+    font-size: 1rem;
+}
+
+.lupaDaPesquisa {
+    background-color: var(--cor-quartenaria);
+    border: .1rem solid var(--cor-quartenaria);
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;  
+}
+
+.infoPerfil {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.iconeCamera,
+.iconeSino {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.container-02 {
+    display: flex;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.imgVideo {
+    width: 100%; 
+    height: auto;
+}
+
+.nomeVideo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-titulos);
+    font-size: 1.25rem;
+    margin: 1rem auto;
+}
+
+.container-03 {
+    display: flex;
+    gap: 2rem;
+}
+
+.canalInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoDoCanal {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.nomeDoCanal {
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-titulos);
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.qtdInscritos {
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-normal);
+    color: var(--cor-tercearia);
+    font-size: 0.875rem;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 2rem;
+}
+
+.inscrever {
+    background-color: var(--cor-secundaria);
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-titulos);
+    font-size: 0.875rem;
+    color: var(--cor-quintenaria);
+    text-transform: uppercase;
+    border: none;
+    width: 9rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.containerAcao {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.botaoAcao {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nomeDaAcao {
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-titulos);
+    font-size: 0.875rem;
+}
+
+.infoVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 1rem 0;
+    width: 90%;
+}
+
+.infoVideoDetalhes {
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-titulos);
+    font-size: 0.875rem;
+}
+
+.descricaoVideo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-normal);
+    color: var(--cor-tercearia);
+}
+
+.listaVideos {
+    list-style: none;
+    cursor: pointer;
+}
+
+.videoDeSugestao {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.infoSugestao {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--expessura-fonte-normal);
+    color: var(--cor-tercearia);
+}
+
+.nomeDoVideoDeSugestao {
+    font-weight: var(--expessura-fonte-titulos);
+}
+
+.imgVideoSugestao {
+    width: 8rem;
+    height: auto;
+}
+
+.nomeDoCanalDeSugestao,
+.infoDoVideoDeSugestao {
+    margin-top: 0.5rem;
+    font-size: .8rem;
+}
